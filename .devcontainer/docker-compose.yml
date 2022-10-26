@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+  redis:
+    image: redis:7.0.5
+    restart: always
+    network_mode: service:app
+    volumes:
+      - redis-data:/data
+volumes:
+  redis-data: {}
