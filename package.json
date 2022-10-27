@@ -11,8 +11,8 @@
     }
   },
   "lint-staged": {
-    "*": "prettier --check --ignore-unknown --config config/.prettierrc",
-    "*.{js,ts,jsx,tsx}": "eslint -c config/eslint.config.json"
+    "*": "prettier --check --ignore-unknown --config config/.prettierrc.json",
+    "*.{js,ts,jsx,tsx}": "eslint -c config/eslint.config.js"
   },
   "nodemonConfig": {
     "ignore": [
