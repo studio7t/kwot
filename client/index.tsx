@@ -33,7 +33,9 @@ function App() {
 }
 
 // Render the React application to DOM
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const root = document.getElementById("root")
+if (!root) throw new Error("Missing root")
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <QueryClientProvider client={new QueryClient()}>
       <App />
