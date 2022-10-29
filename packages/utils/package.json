@@ -1,0 +1,23 @@
+{
+  "name": "@kwot/utils",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "develop": "tsc -w"
+  },
+  "devDependencies": {
+    "@kwot/tsconfig": "*",
+    "@types/node": "^18.11.7",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
+}

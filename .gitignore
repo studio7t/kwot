@@ -25,4 +25,6 @@ node_modules/
 .env.fish
 .env.test
 
-.dist
+.dist/
+dist/
+.turbo/

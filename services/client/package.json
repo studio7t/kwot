@@ -1,0 +1,22 @@
+{
+  "name": "@kwot/client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "develop": "vite"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "@kwot/tsconfig": "*",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@kwot/ui": "*"
+  }
+}

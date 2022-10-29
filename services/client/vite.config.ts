@@ -1,10 +1,9 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
-import paths from "vite-tsconfig-paths"
 import { join } from "path"
 
 export default defineConfig({
-  root: join(__dirname, "../client"),
+  root: join(__dirname, "./src"),
   envDir: ".",
   envPrefix: "KWOT_",
   publicDir: "public",
@@ -22,10 +21,10 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "../.dist/client",
+    outDir: join(__dirname, "./dist"),
     emptyOutDir: true,
     sourcemap: true,
     manifest: true,
   },
-  plugins: [react(), paths({ root: "../" })],
+  plugins: [react()],
 })
