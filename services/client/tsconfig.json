@@ -2,7 +2,11 @@
   "extends": "@kwot/tsconfig/vite.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "#components/*": ["components/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]
